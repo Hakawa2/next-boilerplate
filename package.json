@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
@@ -12,8 +15,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "-": "0.0.1",
-    "D": "1.0.0",
     "next": "13.5.5",
     "prettier": "3.0.3",
     "react": "^18",
