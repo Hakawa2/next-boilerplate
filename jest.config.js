@@ -5,7 +5,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/app/**', // should be tested in e2e
-    '!src/stories/**',
+    '!src/**/stories.tsx',
     '!src/lib/registry.tsx',
     '!src/types/**',
     '!src/styles/**'
